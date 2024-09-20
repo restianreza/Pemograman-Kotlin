@@ -100,6 +100,7 @@
       var anyNumber: Any = 42
       anyNumber = "hallo"
       anyNumber = 4.333
+      println(anyNumber)
 
       var anyString: Any = "42"
 
