@@ -98,7 +98,7 @@ fun main() {
     while (sum < 1000) {
         sum = sum + (sum +1)
     }
-    println(sum)
+    println(sum) // 1023
     //Sebelum iterasi 1, sum = 1, condition = true
     //setelah iterasi 2, sum = 3, condition = true
     //setelah iterasi 3, sum = 7, condition = true
@@ -115,19 +115,19 @@ fun main() {
     do {
         sum =sum + (sum + 1)
     }while (sum < 1000)
-    println(sum)
+    println(sum) // 1023
 
     sum = 1
     while (sum < 1) {
         sum = sum + (sum + 1)
     }
-    println(sum)
+    println(sum) // 1
 
     sum = 1
     do {
         sum = sum + (sum + 1)
     } while (sum < 1)
-    println(sum)
+    println(sum) // 3
 
     // Penggunaan Break
     sum = 1
@@ -137,5 +137,5 @@ fun main() {
             break
         }
     }
-    println(sum)
+    println(sum) // 1023
 }
