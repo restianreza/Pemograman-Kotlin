@@ -76,4 +76,21 @@ fun main () {
     }
     println(4.abs())
     println((-4).abs())
+
+    val a= 4
+    val b: Short = 100
+    val c: Byte = 12
+
+    val d = a + b - c
+    println(d)
+
+    println()
+    for (i in (-10..-1) step 1) {
+        println(i)
+    }
+    
+    println()
+    for (i in (-10..-1) step 1) {
+        println(i)
+    }
 }
