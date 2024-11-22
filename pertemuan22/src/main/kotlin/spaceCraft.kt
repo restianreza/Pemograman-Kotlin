@@ -1,3 +1,7 @@
+import Exception.BrokenEngineException
+import Exception.OutOfFuelException
+import Exception.SpaceToEarthConnectionException
+
 class spaceCraft {
     class SpaceCraft {
         private var isConnectionAvailable: Boolean = false
@@ -7,14 +11,14 @@ class spaceCraft {
 
         fun launch() {
             if (fuel < 5) {
-                throw Exception("Out of full. Can't take off")
+                throw OutOfFuelException
             }
 
             if (!isEnginerInOrder) {
-                throw Exception("The Engine is broken, Can't take off")
+                throw BrokenEngineException
             }
             if (!isConnectionAvailable) {
-                throw Exception("No connection with earth. can't take off")
+                throw SpaceToEarthConnectionException
             }
 
             println("Tryinf to launch")
